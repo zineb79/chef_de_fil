@@ -4,14 +4,10 @@
     background : url("images_c.jpeg") ;
     background-size: cover;     
   }
-            
-  /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
     display: none;
     position: relative; 
   }
-            
-            /* Style navigation menu links */
 .topnav a {
     color: rgb(242, 242, 245);
     padding: 14px 16px;
@@ -20,8 +16,6 @@
     display: block;
     height: 21px;
    }
-            
-            /* Style the hamburger menu */
 .topnav a.icon {
     background: rgb(228, 47, 15);
     display: block;
@@ -29,8 +23,6 @@
     right: 0;
     top: 0;
   }
-            
-            /* Add a grey background color on mouse-over */
 .topnav a:hover {
     background-color: #ddd;
     color: black;
@@ -51,8 +43,101 @@ body {
     padding: 0;
   }
 
+          /*----------------HOME--------------*/
+.row2 {
+  margin: 10px -16px;
+}
+.row2,
+.row2  .column {
+  padding: 8px;
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+.show {
+  display: block;
+}
+.btn2 {
+  border-radius: 10%;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn2:hover {
+  background-color: #ddd;
+}
+
+.btn2.active {
+  background-color: #137933de;
+  border: #137933de solid;
+  color: white;
+}
+
+.content img{
+  width: 40px;
+  height: auto;
+  border-radius: 100%;
+  border: 3px solid #141212;
+}
+/* Slideshow */
+.mySlides {
+  display: none;
+  margin: 20px;
+  width: 30%;
+}
+.mySlides img {
+  vertical-align: middle;
+  margin-left: 110%;
+}
+.slideshow-containe {
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
           /*----------------annoces--------------*/
-  .container {
+.container {
   max-width: 8000px; 
   margin: 50px ; 
   background-color: #fff;
@@ -70,16 +155,14 @@ main h1 {
   letter-spacing: 5px;
 }
 .col-med-3{
-  display: flex; /* Utilisation de flexbox */
-        align-items: center; 
+  display: flex;
+  align-items: center; 
 }
 p, main h1{
   margin: 0;
   margin: 10px;
   padding: 2rem;
 }
-          
-          
 form {
  margin-top: 20px;
 }
@@ -90,8 +173,7 @@ label {
   color:#2c86e0;
   font-size: 20px auto;
   margin: 10px ;
-}
-          
+}         
 input[type="text"],
 select,
 textarea {
@@ -104,8 +186,7 @@ textarea {
   display: block;
   margin: 0 auto;
   border: #4682B4 solid;
-  }
-          
+  }         
 textarea {
   height: 120px;
   }
@@ -134,8 +215,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: rgb(56, 57, 63);
   }
-
-
 main.table{
   width: 0c24db;
   height: 90vh;
@@ -215,8 +294,8 @@ th{
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
   }     
 .btn:active {
-            color: #666;
-            box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
           }
 .btn:before {
   content: "";
@@ -412,9 +491,8 @@ th{
   }
   
   footer{
-    width:100%;
+    width: 100%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    z-index: 1000;
     }
  
